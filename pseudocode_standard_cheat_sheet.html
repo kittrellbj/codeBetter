@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8' />
+<title>Pseudocode Standard - Channel Cheat Sheet</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 5px;
+        background: #fff;
+        color: #222;
+    }
+    .header-row {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    .header-logo {
+        font-size: 14pt;
+        font-weight: bold;
+        color: #d35400;
+    }
+    .header-title {
+        font-size: 20pt;
+        font-family: Consolas, monospace;
+        font-weight: bold;
+    }
+    p {
+        text-align: center;
+        font-size: 10pt;
+        color: #555;
+        margin-bottom: 1em;
+    }
+    table {
+        border: 2px solid #d35400;
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 10pt;
+        margin: 0 0 6px 0;
+    }
+    th, td {
+        border: none;
+        border-bottom: 1px solid #fbe8d3;
+        padding: 3px 5px;
+        vertical-align: top;
+    }
+    thead {
+        background: #d35400 !important;
+        color: #fff;
+        font-weight: bold;
+    }
+    thead th {
+        border: 2px solid #d35400;
+    }
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    code {
+        background: #f5f5f5;
+        padding: 2px 4px;
+        border-radius: 3px;
+        font-family: Consolas, monospace;
+    }
+    .table-row {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 6px;
+        page-break-inside: avoid;
+    }
+    .leftcol {
+        flex: 1;
+        min-width: 260px;
+        max-width: 33%;
+    }
+    .rightcol {
+        flex: 2;
+        min-width: 460px;
+    }
+    .section-header {
+        background: #fbe8d3 !important;
+        color: #222;
+        font-weight: bold;
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+<div class='header-row'>
+<div class='header-logo'><img src="codebetter_logo.png" width="100" height="100"></div>
+<div class='header-title'>codeBetter - Pseudocode Cheat Sheet</div>
+<p><a href="https://github.com/kittrellbj/codeBetter">codeBetter files and information</a> | <a href="https://github.com/kittrellbj">author</a></p>
+</div>
+<div class='table-row'>
+<div class='leftcol'>
+<table>
+<thead><tr><th>Concept</th><th>Pseudocode</th></tr></thead><tbody>
+<tr><td colspan='2' class='section-header'>1️⃣ Variables & Data</td></tr>
+<tr><td>Assignment</td><td><code>CREATE &lt;variable&gt; AS &lt;value&gt;</code></td></tr>
+<tr><td>Reassignment</td><td><code>CHANGE &lt;variable&gt; TO &lt;value&gt;</code></td></tr>
+<tr><td>Boolean</td><td><code>SWITCH</code></td></tr>
+<tr><td>Array/List</td><td><code>CREATE &lt;list name&gt; AS LIST WITH &lt;values&gt;</code></td></tr>
+<tr><td>Dictionary/Map</td><td><code>CREATE &lt;map name&gt; AS MAP WITH &lt;keys: values&gt;</code></td></tr>
+<tr><td colspan='2' class='section-header'>2️⃣ Operators & Comparisons</td></tr>
+<tr><td>==</td><td><code>IS</code></td></tr>
+<tr><td>!=</td><td><code>IS NOT</code></td></tr>
+<tr><td>===</td><td><code>IS EXACTLY</code></td></tr>
+<tr><td>!==</td><td><code>IS NOT EXACTLY</code></td></tr>
+<tr><td>&gt;</td><td><code>GREATER THAN</code></td></tr>
+<tr><td>&lt;</td><td><code>LESS THAN</code></td></tr>
+<tr><td>&gt;=</td><td><code>GREATER OR EQUAL TO</code></td></tr>
+<tr><td>&lt;=</td><td><code>LESS OR EQUAL TO</code></td></tr>
+<tr><td>%</td><td><code>MODULUS</code></td></tr>
+<tr><td>**</td><td><code>TO THE POWER OF</code></td></tr>
+<tr><td>++</td><td><code>ADD ONE TO &lt;variable&gt;</code></td></tr>
+<tr><td>--</td><td><code>SUBTRACT ONE FROM &lt;variable&gt;</code></td></tr>
+<tr><td colspan='2' class='section-header'>3️⃣ Utilities (Output, Input, Comment)</td></tr>
+<tr><td>Output something</td><td><code>SHOW &lt;message&gt;</code></td></tr>
+<tr><td>Ask user for input</td><td><code>ASK &lt;question&gt; SAVE IN &lt;variable&gt;</code></td></tr>
+<tr><td>Comment</td><td><code>EXPLANATION &lt;text&gt;</code></td></tr>
+</tbody></table></div>
+<div class='rightcol'>
+<table>
+<thead><tr><th>Concept</th><th>Equivalence</th><th>Explanation</th><th>Pseudocode</th></tr></thead><tbody>
+<tr><td colspan='4' class='section-header'>4️⃣ Program Structure & Flow</td></tr>
+<tr><td>Sequence</td><td><code>main()</code></td><td>A set of instructions for the computer to run. The list of steps you want the computer to follow.</td><td><code>SEQUENCE &lt;name&gt;</code></td></tr>
+<tr><td colspan='4' class='section-header'>5️⃣ Conditions & Branching</td></tr>
+<tr><td>If</td><td><code>if () {}</code></td><td>If this is true, do what I say here.</td><td><code>IF &lt;condition&gt; THEN ... END IF</code></td></tr>
+<tr><td>Else If</td><td><code>else if () {}</code></td><td>If this is true, do what I say here instead.</td><td><code>OR IF &lt;condition&gt; THEN</code></td></tr>
+<tr><td>Else</td><td><code>else {}</code></td><td>If nothing above was true, do these things.</td><td><code>OTHERWISE ...</code></td></tr>
+<tr><td colspan='4' class='section-header'>6️⃣ Loops & Repetition</td></tr>
+<tr><td>Repeat Until</td><td><code>do ... while()</code></td><td>Keep doing this until we reach the goal.</td><td><code>REPEAT UNTIL &lt;condition&gt; ... END REPEAT</code></td></tr>
+<tr><td>Repeat While</td><td><code>while()</code></td><td>Keep doing this while a condition is true.</td><td><code>REPEAT WHILE &lt;condition&gt; ... END REPEAT</code></td></tr>
+<tr><td>For Each</td><td><code>for &lt;items&gt;</code></td><td>Do this for each thing in the group.</td><td><code>FOR EACH &lt;item&gt; IN &lt;list&gt; ... END FOR</code></td></tr>
+<tr><td colspan='4' class='section-header'>7️⃣ Functions & Reuse</td></tr>
+<tr><td>Function/Method</td><td><code>function, def</code></td><td>A reusable helper you can call to do something for you.</td><td><code>ACTION &lt;name&gt; ... END ACTION</code></td></tr>
+<tr><td>Function Call</td><td><code>functionName()</code></td><td>Run a reusable helper and bring back the results.</td><td><code>CALL ACTION &lt;name&gt;</code></td></tr>
+<tr><td>Return</td><td><code>return</code></td><td>Give back the answer to whoever asked for it.</td><td><code>SEND &lt;value&gt; BACK</code></td></tr>
+<tr><td colspan='4' class='section-header'>8️⃣ Objects & Blueprints</td></tr>
+<tr><td>Class</td><td><code>class</code></td><td>A recipe for making things with the same ingredients.</td><td><code>BLUEPRINT &lt;name&gt; ... END BLUEPRINT</code></td></tr>
+<tr><td>Object</td><td><code>new, instance</code></td><td>A dish made from a recipe that can be served to a guest.</td><td><code>CREATE &lt;blueprint&gt; AS &lt;object&gt;</code></td></tr>
+</tbody></table></div>
+</div>
+</body></html>
