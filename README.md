@@ -1,6 +1,6 @@
 # codeBetter
 
-Use granted under the CC-4.0-BY [LICENSE](LICENSE.md).
+Use granted under the CC-4.0-BY [LICENSE](LICENSE.md). The "codeBetter logo" is copyrighted and not included as part of the licensed content.
 
 ## List of Files
 
