@@ -1,6 +1,6 @@
 # codeBetter
 
-![image](codeBetter_logo.png)
+![image][codebetter_logo.png](https://github.com/kittrellbj/codeBetter/blob/main/codebetter_logo.png)
 
 Use granted under the CC-4.0-BY [LICENSE](LICENSE.md). The "codeBetter logo" above is copyrighted and not included as part of the licensed content.
 
